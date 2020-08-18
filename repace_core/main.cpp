@@ -73,11 +73,11 @@ int main(int argc,char *argv[])
 
     int position;
     char *tab[argc];
-    if(argc >1)//l'utilisateur a écrit dans argv
+    if(argc >1)//l'utilisateur a Ã©crit dans argv
 	{
 		for(position=0;position<argc;position++)
 		{
-            tab[position]=argv[position+1];//argv[0] adresse réservé
+            tab[position]=argv[position+1];//argv[0] adresse rÃ©servÃ©
 		}
         for(position=0;position+1<argc;position++)
         {
@@ -90,16 +90,20 @@ int main(int argc,char *argv[])
                         return 0;
                         )
             gestion_argument("/folder",
-
+folder = tab[position+1];
+position = position +1;
                              )
             gestion_argument("/result",
-
+result  = tab[position+1];
+position = position +1;
                              )
             gestion_argument("/filter",
-
+filter = tab[position+1];
+position = position +1;
                              )
             gestion_argument("/rule",
-
+rule = tab[position+1];
+position = position +1;
                              )
             gestion_argument("/one_file",
                                 one_file = true;
