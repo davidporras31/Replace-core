@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1597677645 source:d:\desktop\repace_core\main.cpp
+	<stdlib.h>
+	<string.h>
+	<stddef.h>
+	<iostream>
+	<direct.h>
+	<vector>
+	<string.h>
+	<sstream>
+	<fstream>
+	<dirent.h>
+
+1597915534 source:d:\documents\projet\replace-core\repace_core\main.cpp
+	<stdlib.h>
+	<string.h>
+	<stddef.h>
+	<iostream>
+	<direct.h>
+	<vector>
+	<string.h>
+	<sstream>
+	<fstream>
+	<dirent.h>
+	"include/fonction.h"
+
+1597916544 d:\documents\projet\replace-core\repace_core\include\fonction.h
+	<stdlib.h>
+	<stddef.h>
+	<iostream>
+	<string>
+	<sstream>
+	<dirent.h>
+	<vector>
+	<string.h>
+	<fstream>
+
+1598520908 source:d:\documents\projet\replace-core\replace_core\main.cpp
+	<stdlib.h>
+	<string.h>
+	<stddef.h>
+	<iostream>
+	<direct.h>
+	<vector>
+	<string.h>
+	<sstream>
+	<fstream>
+	<dirent.h>
+	"include/fonction.h"
+
+1598517874 d:\documents\projet\replace-core\replace_core\include\fonction.h
+	<stdlib.h>
+	<stddef.h>
+	<iostream>
+	<string>
+	<sstream>
+	<dirent.h>
+	<vector>
+	<string.h>
+	<fstream>
+
