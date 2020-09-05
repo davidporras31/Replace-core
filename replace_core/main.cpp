@@ -17,12 +17,12 @@
                                         code\
                                     }
 #ifdef Debug
-    #define Default_Folder "test/"
+    #define Default_Folder "test/txt.txt"
     #define Default_Result "bin/"
     #define Default_Filter "test.rule"
     #define Default_Rule ""
     #define Default_delimiter "@"
-    #define Default_One_File false
+    #define Default_One_File true
 #else
     #define Default_Folder ""
     #define Default_Result "bin/"
@@ -132,7 +132,27 @@ int main(int argc,char *argv[])
     }
     else
     {
-        all_dir.push_back(folder);
+        string the_file = folder;
+        vector<string> cuted_dir;
+        size_t pos = 0;
+        while ((pos = the_file.find("/")) != string::npos)
+        {
+            cuted_dir.push_back(the_file.substr(0, pos));
+            the_file.erase(0, pos + 1);
+        }
+        cuted_dir.push_back(the_file);
+        all_dir.push_back(the_file);
+        folder = "";
+        for(unsigned int i = 0; i<=cuted_dir.size()-2;i++)
+        {
+            folder.insert(folder.size(),cuted_dir.at(i));
+            folder.insert(folder.size(),"/");
+        }
+        char dir[result.length() + folder.length()];
+        string combine = result;
+        combine.append(folder);
+        strcpy(dir , combine.c_str());
+        _mkdir(dir);
     }
     cout << "all file : " << endl;
     for(long long unsigned int i = 0; i <= all_dir.size()-1 ; i++)
